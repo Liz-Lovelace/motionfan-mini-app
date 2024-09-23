@@ -1,5 +1,7 @@
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
+import TelegramBot from 'node-telegram-bot-api';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const token = process.env.BOT_TOKEN;
 const miniAppUrl = process.env.MINI_APP_URL;
