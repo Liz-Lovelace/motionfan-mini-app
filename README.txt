@@ -1,20 +1,23 @@
-Ссылка для просмотра: https://motionfan.vercel.app/
+Ссылка для просмотра в телеграм: https://t.me/motionfan_testbot
 
-Структура файлов:
-.
-└── src
-    ├── index.html
-    ├── static
-    │   ├── BikeChallenge.png
-    │   ├── calendar.svg
-    │   ├── iPhone.png
-    │   ├── RunChallenge.png
-    │   └── target.svg
-    └── style.css
+Это статичный макет, никакой логики нет.
 
-В static находятся картинки, которые используются в index.html
-Стили для html прописаны в style.css, они импортируется в index.html
+Весь mini app находится в src/website
+В static находятся картинки и иконки, которые используются в index.html
+Стили для html прописаны в style.css, они импортируются в index.html
+В main.js есть код который запускает тестового телеграм бота, который просто отправляет ссылку на статичный сайт, который хостится сейчас на https://motionfan-mini-app.liz-lovelace.com/
 
-Это статичный макет, чтобы подключить к базе данных нужно будет динамично создавать элементы .list-item и заменять src картинок
 
-Чтобы посмотреть сайт, можно перейти на https://motionfan.vercel.app/ или открыть index.html в проводнике
+Чтобы запустить на своём сервере:
+- создать новый телеграм бот через BotFather и получить токен
+- Клонировать проект с гитхаба
+- перейти в `motionfan-mini-app/`
+```
+npm install
+cp .env.example .env
+```
+- вставить токен для своего телеграм бота в .env
+```
+node src/main.js
+```
+После этого ваш бот должен отвечать на /start и выдавать кнопку, которая открывает mini app
