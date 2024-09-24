@@ -138,6 +138,7 @@ main {
 }
 
 .prize-total {
+  display: none; /* this element is hidden on purpose */
   color: var(--pale-blue);
   font-weight: 600;
   font-size: 11px;
