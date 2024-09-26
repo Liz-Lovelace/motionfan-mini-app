@@ -6,34 +6,36 @@
   <title>MOTIONFAN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./script.js"></script>
 </head>
 <body>
   <div class="background-container">
-    <img src="static/Man.png" alt="Your character" class="background-image">
+    <img src="" class="background-image" id="characterImage">
   </div>
   <main>
     <div class="username-box">
-      <p class="username">@user_777</p>
+      <p class="username" id="username"></p>
     </div>
     <div class="balance-bar">
-      <img src="static/Coin.png" alt="Coin">
-      <span class="balance-amount">12,234,399</span>
+      <img src="assets/Coin.png" alt="Coin">
+      <span class="balance-amount" id="balance"></span>
     </div>
     
     <div class="stats-container">
       <div class="step-count-box">
         <p class="date">За сегодня</p>
         <div class="steps">
-          <img src="static/Shoe.svg" alt="Shoe icon">
-          <p>10 875</p>
+          <img src="assets/Shoe.svg" alt="Shoe icon">
+          <p id="steps"></p>
         </div>
-        <p class="distance">9,7 км</p>
+        <p class="distance" id="distance"></p>
       </div>
       <div class="challenge-prize-container">
-        <img src="static/Prize big.svg" alt="Prize icon">
+        <img src="assets/Prize big.svg" alt="Prize icon">
         <div class="prize-overlay">
-          <p class="prize-count">2156</p>
-          <p class="prize-total">из 3000</p>
+          <p class="prize-count" id="challengeProgress"></p>
+          <p class="prize-total" id="challengeTotal"></p>
         </div>
       </div>
     </div>
@@ -45,23 +47,23 @@
   </main>
   <div class="tab-bar">
     <div class="tab-item active">
-      <img src="static/User.svg" alt="Profile icon">
+      <img src="assets/User.svg" alt="Profile icon">
       <p>Профиль</p>
     </div>
     <div class="tab-item">
-      <img src="static/Tasks.svg" alt="Tasks icon">
+      <img src="assets/Tasks.svg" alt="Tasks icon">
       <p>Задания</p>
     </div>
     <div class="tab-item">
-      <img src="static/Prize.svg" alt="Challenges icon">
+      <img src="assets/Prize.svg" alt="Challenges icon">
       <p>Челленджи</p>
     </div>
     <div class="tab-item">
-      <img src="static/Coin.svg" alt="AirDrop icon">
+      <img src="assets/Coin.svg" alt="AirDrop icon">
       <p>AirDrop</p>
     </div>
     <div class="tab-item">
-      <img src="static/FAQ.svg" alt="FAQ icon">
+      <img src="assets/FAQ.svg" alt="FAQ icon">
       <p>Вопросы<br>и ответы</p>
     </div>
   </div>

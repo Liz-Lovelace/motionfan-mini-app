@@ -9,10 +9,6 @@
 
 body {
   position: relative;
-  /* this can be used to fix an obscure bug on iOS 
-  overflow: hidden;
-  height: 100lvh;
-  */
   background-color: #fff;
 }
 
